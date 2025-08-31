@@ -1,0 +1,24 @@
+{
+    "name": "my-hybrid-app",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "electron/main.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development concurrently \"vite\" \"wait-on http://localhost:5173 && npx electron electron/main.js\"",
+        "build": "vite build",
+        "start": "cross-env NODE_ENV=production npx electron electron/main.js"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.0",
+        "electron": "^31.0.0",
+        "node-telegram-bot-api": "^0.66.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.2.0",
+        "vite": "^7.1.3",
+        "wait-on": "^7.2.0",
+        "cross-env": "^7.0.3"
+    }
+}
