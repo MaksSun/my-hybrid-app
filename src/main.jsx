@@ -7,7 +7,7 @@ function App() {
             <h1>Electron + Vite + Telegram Bot</h1>
             <p>Управляй приложением через Telegram 🚀</p>
             <p>Команды бота: /list, /read filename, /update</p>
-            <p>Команды бота: /list, /read filename, /update</p>
+            <p>Команды бота: /list, /read filename, /update1</p>
         </div>
     );
 }
